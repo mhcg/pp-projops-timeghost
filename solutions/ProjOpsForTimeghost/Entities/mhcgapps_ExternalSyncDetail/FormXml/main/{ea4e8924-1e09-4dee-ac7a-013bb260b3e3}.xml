@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ea4e8924-1e09-4dee-ac7a-013bb260b3e3}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{bb4e162d-4d38-4fcc-82e6-e67b129a42dd}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{0f388e84-f8f1-43d0-9a94-cacf57a78bbe}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{47872a35-ce5d-4ff0-b199-94e753f4e3ac}" locklevel="0">
+                        <labels>
+                          <label description="External System" languagecode="1033" />
+                        </labels>
+                        <control id="mhcgapps_externalsyncsystem" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mhcgapps_externalsyncsystem" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{03ac7743-20f0-411f-8ae3-c0bf24d10ce0}" locklevel="0">
+                        <labels>
+                          <label description="Entity Type" languagecode="1033" />
+                        </labels>
+                        <control id="mhcgapps_syncentitytype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mhcgapps_syncentitytype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2f827b38-8d81-4b0a-9c82-2771085db6fd}">
+                        <labels>
+                          <label description="Internal ID" languagecode="1033" />
+                        </labels>
+                        <control id="mhcgapps_syncinternalid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mhcgapps_syncinternalid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c8b99b0-ed23-4b92-82fe-20679c1a7386}" locklevel="0">
+                        <labels>
+                          <label description="External ID" languagecode="1033" />
+                        </labels>
+                        <control id="mhcgapps_syncexternalid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mhcgapps_syncexternalid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{543d2d1d-47dd-4dfb-928c-fcebc7d2173f}" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e811605-5442-4bf4-9ea5-80a01c42fcb6}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ff1b813d-b88a-4cf4-8bcd-260f7eb576cd}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{88c51120-d3b3-44f7-afc2-7f4506953e2f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d66b1095-3760-4abf-b9da-9171c25d4719}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{051dc394-54cf-43bb-b05c-60d487d55c07}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{8a5bc46c-aebf-4719-9f7a-61e1763f39c6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{72ab35fc-4be8-40ec-8774-1c9751414663}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{97b502f2-53f6-4af7-bce0-c80e7ea93846}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e1f82965-8f17-4b48-9037-c693a05b23ae}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0d1a272c-0700-4539-a263-b504343b2c33}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mhcgapps_syncinternalid" select="1" icon="1" preview="1">
+        <row name="result" id="mhcgapps_externalsyncdetailid">
+          <cell name="mhcgapps_externalsyncsystem" width="100" />
+          <cell name="mhcgapps_syncentitytype" width="100" />
+          <cell name="mhcgapps_syncinternalid" width="300" />
+          <cell name="mhcgapps_syncexternalid" width="294" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mhcgapps_externalsyncdetail">
+          <attribute name="mhcgapps_externalsyncdetailid" />
+          <attribute name="mhcgapps_syncinternalid" />
+          <attribute name="createdon" />
+          <order attribute="mhcgapps_syncinternalid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="mhcgapps_syncinternalid" operator="like" value="{0}" />
+            <condition attribute="mhcgapps_syncentitytype" operator="like" value="{0}" />
+            <condition attribute="mhcgapps_syncexternalid" operator="like" value="{0}" />
+            <condition attribute="mhcgapps_externalsyncsystem" operator="like" value="{0}" />
+          </filter>
+          <attribute name="mhcgapps_syncexternalid" />
+          <attribute name="mhcgapps_syncentitytype" />
+          <attribute name="mhcgapps_externalsyncsystem" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active External Sync Details" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -52,15 +52,6 @@ jobs:
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
 
-    - name: check-solution action
-      uses: microsoft/powerplatform-actions/check-solution@0.4.0
-      with:
-        environment-url: ${{secrets.ENVIRONMENT_DEV_URL}}
-        app-id: ${{secrets.APP_ID}}
-        client-secret: ${{secrets.CLIENT_SECRET}}
-        tenant-id: ${{secrets.TENANT_ID}}
-        path: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
-
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@0.4.0
       with:
